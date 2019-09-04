@@ -1,6 +1,6 @@
 #import "FakeWechatPlugin.h"
-#import <WechatOpenSDK/WXApi.h>
-#import <WechatOpenSDK/WechatAuthSDK.h>
+#import <WXApi.h>
+#import <WechatAuthSDK.h>
 
 @interface FakeWechatPlugin () <WXApiDelegate, WechatAuthAPIDelegate>
 
