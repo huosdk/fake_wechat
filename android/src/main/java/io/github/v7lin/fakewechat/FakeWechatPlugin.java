@@ -290,7 +290,7 @@ public class FakeWechatPlugin implements MethodCallHandler, PluginRegistry.ViewD
 
     private void registerApp(MethodCall call, Result result) {
         final String appId = call.argument(ARGUMENT_KEY_APPID);
-        iwxapi = WXAPIFactory.createWXAPI(registrar.context().getApplicationContext(), appId);
+        iwxapi = WXAPIFactory.createWXAPI(registrar.context().getApplicationContext(), appId,false);
         iwxapi.registerApp(appId);
         if (refreshWxappReceiver != null) {
             registrar.context().unregisterReceiver(refreshWxappReceiver);
